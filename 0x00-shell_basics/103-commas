@@ -1,2 +1,3 @@
+#!/bin/bash
 ls -1a | sed 's/$/,/' | sed 's/^\.\{1,2\}\(,\|\)\|\///g' | sort -k1.1d -k1.2n -k1.3 | tr -d '\n' && echo
 
